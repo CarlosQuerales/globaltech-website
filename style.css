@@ -1,0 +1,39 @@
+/* Custom Styles for GlobalTech */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+.hero {
+  background: url('https://source.unsplash.com/1600x900/?healthcare,hospital') no-repeat center center/cover;
+  min-height: 90vh;
+}
+
+section {
+  padding: 4rem 0;
+}
+
+.card {
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+footer a {
+  text-decoration: none;
+}
+
+textarea, input {
+  resize: none;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+}
