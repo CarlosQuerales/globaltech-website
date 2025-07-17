@@ -1,0 +1,16 @@
+{
+  "name": "our_theme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss/style.scss css/style.css --style=compressed --source-map",
+    "minify:js": "terser js/main.js --compress --mangle --output js/main.min.js --source-map"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.64.0",
+    "terser": "^5.19.2"
+  }
+}
