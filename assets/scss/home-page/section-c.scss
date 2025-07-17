@@ -1,0 +1,139 @@
+.section-c{
+	position: relative;
+	padding: 75px 0 40px;
+	color: white;
+	background-color: black;
+
+	.container{
+		position: relative;
+		z-index: 5;
+	}
+
+	h2{
+		@include font2;
+		font-size: 28px;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1;
+		letter-spacing: -0.28px;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 27px;
+
+		&::before{
+			content: '';
+			display: none;
+			width: 57px;
+			height: 2px;
+			background: $primary;
+			position: relative;
+			margin-right: 20px;
+		}
+
+		&::after{
+			content: '';
+			display: none;
+			width: 57px;
+			height: 2px;
+			background: $primary;
+			position: relative;
+			margin-left: 20px;
+		}
+	}
+
+	a.d-block{
+		text-decoration: none;
+	}
+
+	.card{
+		border: none;
+		background: transparent;
+		border-radius: 0;
+	}
+
+	.img-wrap{
+		width: 154px;
+		height: 154px;
+		margin: 0 auto;
+	}
+
+	.card-title{
+		@include font1;
+		font-size: 18px;
+		font-weight: bold;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1.11;
+		letter-spacing: -0.18px;
+		color: $primary;
+		margin-bottom: 27px;
+
+	}
+
+	.card-text{
+		p{
+			font-size: 14px;
+			font-weight: normal;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: 1.43;
+			letter-spacing: normal;
+			color: white;
+		}
+	}
+	
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+	
+	
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+	.section-c h2{
+		&::before, &::after{
+			display: block;
+		}
+	}
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+	.section-c{
+		background: url('../images/bg-c.jpg');
+		background-color: black;
+		background-size: cover;
+		background-position: center;
+		padding: 92px 0 116px;
+		&:before{
+			opacity: 0.67;
+			  background-color: black;
+			  z-index: 1;
+		}
+	}
+
+	.section-c h2{
+		font-size: 52px;
+	}
+
+	.section-c .card-title{
+		font-size: 27px;
+	}
+
+	.section-c .card-text p{
+		font-size: 16px;
+	}
+	
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+	
+}
+
+

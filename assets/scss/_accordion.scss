@@ -1,0 +1,145 @@
+.interior-page{
+	#accordionBlock, .elevation-accordion, .accordion{
+		.card{
+				border-radius: 0 !important;
+				box-shadow: none !important;
+				margin-bottom: 14px;
+				border-bottom: 1.5px solid #cecece;
+			&:first-child{
+				.card-header h2 .btn{
+					&::before{
+						content: "\f078";
+					}
+					
+				}
+			}
+			.card-header{
+				padding: 0 !important;
+				margin: 0 !important;
+				background: white !important;
+				border-radius: 0 !important;
+				border-bottom: none;
+				h2, h3, h4, h6{
+					@include font3;
+					font-size: 18px;
+					font-weight: bold;
+					font-stretch: normal;
+					font-style: normal;
+					line-height: 1.22;
+					letter-spacing: -0.32px;
+					color: $text;
+					.btn{
+						color: inherit;
+						display: block;
+						font-size: inherit;
+						margin: 0 !important;
+						padding: 1.25rem 50px 1.25rem 1.25rem;
+						position: relative;
+						text-align: left;
+						width: 100%;
+						white-space: normal !important;
+						&[aria-expanded^="true"]::before{
+							content: "\f077";
+						}
+						&[aria-expanded^="false"]::before{
+							content: "\f078";
+							color: $text;
+						}
+						&[aria-expanded^="true"]{
+								color: $secondary;
+								font-weight: 700;
+						}
+						&::before{
+							font-family: "Font Awesome 5 Free"; 
+							font-weight: 900;
+							font-style: normal;
+							font-variant: normal;
+							text-rendering: auto;
+							-webkit-font-smoothing: antialiased;
+							/*--adjust as necessary--*/       
+							color: $secondary;     
+							display: inline-block;
+							font-size: 20px; 
+							line-height: 1;
+							margin-right: 15px;    
+							position: absolute;      
+							right: 0;
+							top: calc(50% - 10px);  
+						}
+						&.collapsed{
+							//background: $secondary;
+							&::before{
+								content: "\f078";
+							}
+						}
+						&:hover, &:focus, &:active{
+							text-decoration: none;
+						}
+					}
+				}
+			} /*.card.heade4r*/
+			.collapse {
+				.card-body{
+					background:white;
+					color: $text;
+					padding: 0;
+					p, h3, h2,h4,h5,h6,span,strong, em{
+						color: $text;
+					}
+				}
+				&.show{
+					.card-body{
+						padding: 19px;
+					}
+				}
+			}
+			.collapsing{
+				.card-body{
+					padding: 19px;
+				}
+			}
+			.collapse, .collapsing {
+				opacity: 0;
+				&.show{
+					-webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+					animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+				}
+			}
+			@-webkit-keyframes fade-in {
+				0% {
+				  opacity: 0;
+				}
+				100% {
+				  opacity: 1;
+				}
+			}
+			@keyframes fade-in {
+				0% {
+				  opacity: 0;
+				}
+				100% {
+				  opacity: 1;
+				}
+			}
+		}
+	}
+}
+	@include mediaqueries(991max) {
+		
+	}
+	@include mediaqueries(767max) {
+		
+	}
+	@include mediaqueries(576max) {
+		.interior-page #accordionBlock .card .collapse .card-body, .interior-page .elevation-accordion .card .collapse .card-body{
+			padding: 18px 19px;
+		}
+
+		.interior-page #accordionBlock .card .card-header h2, .interior-page #accordionBlock .card .card-header h3, .interior-page #accordionBlock .card .card-header h4, .interior-page #accordionBlock .card .card-header h6, .interior-page .elevation-accordion .card .card-header h2, .interior-page .elevation-accordion .card .card-header h3, .interior-page .elevation-accordion .card .card-header h4, .interior-page .elevation-accordion .card .card-header h6{
+			// font-size: 20px;
+		}
+
+	}
+	@include mediaqueries(320max) {
+
+	}

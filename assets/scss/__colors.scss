@@ -1,0 +1,217 @@
+//Variables ColorS
+$primary: #0045A5;
+// $primaryLight: #eaf8ff;
+// $primaryDark: #215744;
+$primaryLight:lighten($primary, 5%);
+$primaryDark:darken($primary, 10%);
+
+$secondary: #10BCE2;
+// $secondaryLight: #f26bb5;
+$secondaryLight:lighten($secondary, 5%);
+$secondaryDark:darken($secondary, 10%);
+
+$tertiary: #3AAA35;
+$tertiaryLight:lighten($tertiary, 5%);
+$tertiaryDark:darken($tertiary, 10%);
+
+$quaternary: #FFFFFF;
+// $quaternaryLight: #ffedca;
+// $quaternaryDark: #8f6200;
+$quaternaryLight:lighten($quaternary, 5%);
+$quaternaryDark:darken($quaternary, 10%);
+
+$gray: #8c8c8c;
+$grayLight: #e5e5e5;
+// $grayLight:lighten($gray, 5%);
+$grayDark:darken($gray, 10%);
+
+$text:#000;
+$light-text:#ffffff;
+$strong: #000000;
+$textDark: #3e3c3d;
+
+  
+			
+
+$link: $primary;
+$linkDark: darken($link, 20%);
+
+
+.has-primary-color {
+  color: $primary !important;
+}
+
+.has-primary-background-color{
+  background: $primary !important;
+}
+.has-primarylight-color {
+  color: $primaryLight !important;
+}
+
+.has-primarylight-background-color{
+  background: $primaryLight !important;
+}
+.has-primarydark-color {
+  color: $primaryDark !important;
+}
+
+.has-primarydark-background-color{
+  background: $primaryDark !important;
+}
+.has-secondary-color {
+  color: $secondary !important;
+}
+
+.has-secondary-background-color{
+  background: $secondary !important;
+}
+.has-secondarylight-color {
+  color: $secondaryLight !important;
+}
+
+.has-secondarylight-background-color{
+  background: $secondaryLight !important;
+}
+.has-secondarydark-color {
+  color: $secondaryDark !important;
+}
+
+.has-secondarydark-background-color{
+  background: $secondaryDark !important;
+}
+
+
+.has-tertiary-color {
+  color: $tertiary !important;
+}
+
+.has-tertiary-background-color{
+  background:  $tertiary !important;
+}
+
+.has-tertiarylight-color {
+  color: $tertiaryLight !important;
+}
+
+.has-tertiarylight-background-color{
+  background:  $tertiaryLight !important;
+}
+
+.has-tertiarydark-color {
+  color: $tertiaryDark !important;
+}
+
+.has-tertiarydark-background-color{
+  background:  $tertiaryDark !important;
+}
+
+.has-quaternary-color {
+  color: $quaternary !important;
+}
+
+.has-quaternary-background-color{
+  background: $quaternary !important;
+}
+
+.has-quaternarylight-color {
+  color: $quaternaryLight !important;
+}
+
+.has-quaternarylight-background-color{
+  background: $quaternaryLight !important;
+}
+.has-quaternarydark-color {
+  color: $quaternaryDark !important;
+}
+
+.has-quaternarydark-background-color{
+  background: $quaternaryDark !important;
+}
+
+.has-gray-color {
+  color: $gray !important;
+}
+
+.has-gray-background-color{
+  background: $gray !important;
+}
+
+.has-graylight-color {
+  color: $grayLight !important;
+}
+
+.has-graylight-background-color{
+  background: $grayLight !important;
+}
+
+
+.has-white-color {
+  color: white!important;
+}
+
+
+.has-black-color {
+  color: black!important;
+}
+
+
+
+$neutralDarker: #000000;
+$neutrayDark: #000000;
+$neutral: #3d3d3d;
+$neutralLight: #67686a;
+$neutralLighter: #abacad; 
+$neutralLightest: #f2f2f2; 
+
+/*used Colors*/
+
+
+
+/*used Colors*/
+
+/*Others Colors*/
+$red: #990000; 
+$grey: #d8d8d8; 
+$yellow: #ffa900;
+$pink: #fd5d5d; 
+$blue: #007bc1;
+$brown: #ad9776; 
+$purple: #69089f; 
+
+@mixin gradientshadowHor{
+  background: rgb(0,0,0);
+  background: -moz-linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1); 
+}
+
+@mixin gradientshadowVer { 
+  background: rgb(0,0,0);
+  background: -moz-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1); 
+}
+
+@mixin gradientBanner {
+  background: rgb(0,0,0);
+  background: -moz-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1); 
+}
+
+@mixin gradientSlider{
+  opacity: 0.3;
+  background-image: -webkit-linear-gradient(89deg, var(--black), rgba(0, 0, 0, 0));
+  background-image: -o-linear-gradient(89deg, var(--black), rgba(0, 0, 0, 0));
+  background-image: linear-gradient(179deg, var(--black), rgba(0, 0, 0, 0));	
+}
+@mixin gradientOrange{
+  background: rgb(243,200,101);
+  background: -moz-linear-gradient(0deg, rgba(243,200,101,1) 0%, rgba(245,140,60,1) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(243,200,101,1) 0%, rgba(245,140,60,1) 100%);
+  background: linear-gradient(0deg, rgba(243,200,101,1) 0%, rgba(245,140,60,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f3c865",endColorstr="#f58c3c",GradientType=1); 
+}

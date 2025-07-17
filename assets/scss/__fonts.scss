@@ -1,0 +1,53 @@
+// @import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
+
+
+@mixin font1{
+  font-family: 'Inter', sans-serif !important;
+}
+@mixin font2{
+  font-family: 'Inter', sans-serif !important;
+}
+@mixin font3{
+  font-family: 'Inter', sans-serif !important;
+}
+
+
+
+// @font-face {
+//   font-family: 'Empera Soft Vintage';
+//   src: url('../fonts/Empera-SoftVintage.eot');
+//   src: url('../fonts/Empera-SoftVintage.eot?#iefix') format('embedded-opentype'),
+//       url('../fonts/Empera-SoftVintage.woff2') format('woff2'),
+//       url('../fonts/Empera-SoftVintage.woff') format('woff'),
+//       url('../fonts/Empera-SoftVintage.ttf') format('truetype'),
+//       url('../fonts/Empera-SoftVintage.svg#Empera-SoftVintage') format('svg');
+//   font-weight: 500;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: 'Ridley Grotesk Demo';
+//   src: url('../fonts/RidleyGroteskDemo-Italic.eot');
+//   src: url('../fonts/RidleyGroteskDemo-Italic.eot?#iefix') format('embedded-opentype'),
+//       url('../fonts/RidleyGroteskDemo-Italic.woff2') format('woff2'),
+//       url('../fonts/RidleyGroteskDemo-Italic.woff') format('woff'),
+//       url('../fonts/RidleyGroteskDemo-Italic.ttf') format('truetype'),
+//       url('../fonts/RidleyGroteskDemo-Italic.svg#RidleyGroteskDemo-Italic') format('svg');
+//   font-weight: normal;
+//   font-style: italic;
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: 'Ridley Grotesk Demo';
+//   src: url('../fonts/RidleyGroteskDemo-Regular.eot');
+//   src: url('../fonts/RidleyGroteskDemo-Regular.eot?#iefix') format('embedded-opentype'),
+//       url('../fonts/RidleyGroteskDemo-Regular.woff2') format('woff2'),
+//       url('../fonts/RidleyGroteskDemo-Regular.woff') format('woff'),
+//       url('../fonts/RidleyGroteskDemo-Regular.ttf') format('truetype'),
+//       url('../fonts/RidleyGroteskDemo-Regular.svg#RidleyGroteskDemo-Regular') format('svg');
+//   font-weight: normal;
+//   font-style: normal;
+//   font-display: swap;
+// }

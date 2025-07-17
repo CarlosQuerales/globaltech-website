@@ -1,0 +1,67 @@
+.section-i{
+	padding: 48px 0;
+	h2{
+		@include font2;
+		// font-size: 28px;
+		font-weight: normal;
+		font-stretch: normal;
+		font-style: normal;
+		line-height: 1;
+		letter-spacing: -0.28px;
+		color: black;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 27px;
+
+		&::before{
+			content: '';
+			display: none;
+			width: 57px;
+			height: 2px;
+			background: $primary;
+			position: relative;
+			margin-right: 20px;
+		}
+
+		&::after{
+			content: '';
+			display: none;
+			width: 57px;
+			height: 2px;
+			background: $primary;
+			position: relative;
+			margin-left: 20px;
+		}
+	}
+	
+	.sponsor-vCarousel{
+		padding: 0;
+	}
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+	
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+	.section-i h2{
+		&::before, &::after{
+			display: block;
+		}
+	}
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+	
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+	
+}
+
