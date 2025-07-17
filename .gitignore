@@ -1,0 +1,24 @@
+# Ignore node dependencies
+assets/node_modules/
+assets/package-lock.json
+
+# Ignore compiled CSS if you're using SCSS
+# assets/css/
+
+# Ignore SCSS cache files
+*.sass-cache
+.sass-cache/
+
+# macOS system files
+.DS_Store
+
+# VS Code settings
+.vscode/
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Env files (if added later)
+.env
