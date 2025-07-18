@@ -548,6 +548,90 @@ a, button, span{
 	  }   
 	}
   }
+
+
+  &.btn-video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background: transparent;
+    border: none;
+    transition: all 0.4s ease-in-out;
+    &::after{
+      content: "play video";
+      position: relative;
+      display: inline-flex;
+      @include font1;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: $white;
+      padding-left: 11px;
+      max-width: 94px;
+      text-align: left;
+    }
+    &:hover,
+    &:focus,
+    &:active,
+    &.hover {
+      &:before {
+        transition: all 0.4s ease-in-out;
+        background: $white;
+        color: $primary;
+        transform: scale(1.1);
+      }
+
+      // &::after {
+      //   opacity: 0.64;
+      //   -webkit-filter: blur(1px);
+      //   filter: blur(1px);
+      //   border: solid 2px $primary;
+      //   background: $primary;
+      // }
+    }
+
+    &::before {
+      content: "\f04b";
+      box-sizing: border-box;
+      display: inline-flex;
+      position: relative;
+      font: normal normal normal 14px/1 FontAwesome;
+      font-family: "Font Awesome 5 Pro";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      font-size: 15px;
+      text-rendering: auto;
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
+      padding-top: 0px;
+      padding-left: 3px;
+      background: white;
+      color: $primaryDark;
+      // box-shadow: 3px 3px 9px 0 rgba(26, 26, 26, 0.39);
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      z-index: 5;
+    }
+
+    // &::after {
+    //   content: "";
+    //   display: block;
+    //   width: 83px;
+    //   height: 83px;
+    //   border-radius: 50%;
+    //   opacity: 0.64;
+    //   border: solid 2px #ffffff;
+    //   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    //   position: absolute;
+    //   background-color: $white;
+    // }
+  }
 }
 /*button's Size Variables*/
 $btn_size_desktop: 3.75rem;
