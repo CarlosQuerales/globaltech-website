@@ -11,6 +11,10 @@
 @import "../scss/__helpers";
 // @import "../scss/__popup";
 
+//MiCare
+@import "../scss/landing/page-title-home-section";
+
+
 @import "../scss/landing/hero-section";
 @import "../scss/landing/about-us-section";
 @import "../scss/landing/fun-fact-section";
@@ -22,8 +26,15 @@
 
 @import "../scss/landing/pricing-section";
 
-
+//general settings
+@import "../scss/settings/general-animation";
 @import "../scss/settings/prohealth-general-settings";
+
+
+
+@import "../scss/_popup";
+@import "../scss/_video-popup";
+
 
 @import "../scss/home-page/section-a";
 @import "../scss/home-page/section-b";

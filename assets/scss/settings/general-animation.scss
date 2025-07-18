@@ -1,0 +1,154 @@
+
+/*------------ animation ---------------- */
+.tf-fade-top {
+	transform: translateY(20px);
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+.tf-fade-left {
+	transform: translateX(-20px);
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+.tf-fade-right {
+	transform: translateX(20px);
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+.tf-fade-bottom {
+	transform: translateY(-20px);
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+.tf-fade-bottom-left {
+	transform: translate(20px, -20px);
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+.tf-fade-top-right {
+	transform: translate(-20px, -20px);
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+.tf-animate-1 {
+	clip-path: inset(0 100% 0 0);
+	opacity: 0;
+	-webkit-transition: 1s cubic-bezier(0.63, 0.25, 0.25, 1);
+	-khtml-transition: 1s cubic-bezier(0.63, 0.25, 0.25, 1);
+	-moz-transition: 1s cubic-bezier(0.63, 0.25, 0.25, 1);
+	-ms-transition: 1s cubic-bezier(0.63, 0.25, 0.25, 1);
+	-o-transition: 1s cubic-bezier(0.63, 0.25, 0.25, 1);
+	transition: 1s cubic-bezier(0.63, 0.25, 0.25, 1);
+}
+.tf-animate-1.active-animate {
+	clip-path: inset(0 0 0 0);
+	opacity: 1;
+	transform: translateX(0);
+}
+.tf-animate-1.transition-1s {
+	-webkit-transition: 1.5s cubic-bezier(0.63, 0.25, 0.25, 1);
+	-khtml-transition: 1.5s cubic-bezier(0.63, 0.25, 0.25, 1);
+	-moz-transition: 1.5s cubic-bezier(0.63, 0.25, 0.25, 1);
+	-ms-transition: 1.5s cubic-bezier(0.63, 0.25, 0.25, 1);
+	-o-transition: 1.5s cubic-bezier(0.63, 0.25, 0.25, 1);
+	transition: 1.5s cubic-bezier(0.63, 0.25, 0.25, 1);
+}
+.tf-animate-2 {
+	clip-path: inset(0 0 100% 0);
+	opacity: 0;
+	-webkit-transition: 1s cubic-bezier(0.63, 0.25, 0.25, 1);
+	-khtml-transition: 1s cubic-bezier(0.63, 0.25, 0.25, 1);
+	-moz-transition: 1s cubic-bezier(0.63, 0.25, 0.25, 1);
+	-ms-transition: 1s cubic-bezier(0.63, 0.25, 0.25, 1);
+	-o-transition: 1s cubic-bezier(0.63, 0.25, 0.25, 1);
+	transition: 1s cubic-bezier(0.63, 0.25, 0.25, 1);
+}
+.tf-animate-2.active-animate {
+	clip-path: inset(0 0 0 0);
+	opacity: 1;
+	transform: translateX(0);
+}
+.tf-animate-2.transition-1s {
+	-webkit-transition: 1.5s cubic-bezier(0.63, 0.25, 0.25, 1);
+	-khtml-transition: 1.5s cubic-bezier(0.63, 0.25, 0.25, 1);
+	-moz-transition: 1.5s cubic-bezier(0.63, 0.25, 0.25, 1);
+	-ms-transition: 1.5s cubic-bezier(0.63, 0.25, 0.25, 1);
+	-o-transition: 1.5s cubic-bezier(0.63, 0.25, 0.25, 1);
+	transition: 1.5s cubic-bezier(0.63, 0.25, 0.25, 1);
+}
+.tf-animate-3 {
+	clip-path: inset(100% 0 0 0);
+	opacity: 0;
+	-webkit-transition: 1s cubic-bezier(0.63, 0.25, 0.25, 1);
+	-khtml-transition: 1s cubic-bezier(0.63, 0.25, 0.25, 1);
+	-moz-transition: 1s cubic-bezier(0.63, 0.25, 0.25, 1);
+	-ms-transition: 1s cubic-bezier(0.63, 0.25, 0.25, 1);
+	-o-transition: 1s cubic-bezier(0.63, 0.25, 0.25, 1);
+	transition: 1s cubic-bezier(0.63, 0.25, 0.25, 1);
+}
+.tf-animate-3.active-animate {
+	clip-path: inset(0 0 0 0);
+	opacity: 1;
+	transform: translateX(0);
+}
+.tf-animate-3.transition-1s {
+	-webkit-transition: 1.5s cubic-bezier(0.63, 0.25, 0.25, 1);
+	-khtml-transition: 1.5s cubic-bezier(0.63, 0.25, 0.25, 1);
+	-moz-transition: 1.5s cubic-bezier(0.63, 0.25, 0.25, 1);
+	-ms-transition: 1.5s cubic-bezier(0.63, 0.25, 0.25, 1);
+	-o-transition: 1.5s cubic-bezier(0.63, 0.25, 0.25, 1);
+	transition: 1.5s cubic-bezier(0.63, 0.25, 0.25, 1);
+}
+.tf-animate-4 {
+	clip-path: inset(0 0 0 100%);
+	opacity: 0;
+	-webkit-transition: 1s cubic-bezier(0.63, 0.25, 0.25, 1);
+	-khtml-transition: 1s cubic-bezier(0.63, 0.25, 0.25, 1);
+	-moz-transition: 1s cubic-bezier(0.63, 0.25, 0.25, 1);
+	-ms-transition: 1s cubic-bezier(0.63, 0.25, 0.25, 1);
+	-o-transition: 1s cubic-bezier(0.63, 0.25, 0.25, 1);
+	transition: 1s cubic-bezier(0.63, 0.25, 0.25, 1);
+}
+.tf-animate-4.active-animate {
+	clip-path: inset(0 0 0 0);
+	opacity: 1;
+	transform: translateX(0);
+}
+.tf-animate-4.transition-1s {
+	-webkit-transition: 1.5s cubic-bezier(0.63, 0.25, 0.25, 1);
+	-khtml-transition: 1.5s cubic-bezier(0.63, 0.25, 0.25, 1);
+	-moz-transition: 1.5s cubic-bezier(0.63, 0.25, 0.25, 1);
+	-ms-transition: 1.5s cubic-bezier(0.63, 0.25, 0.25, 1);
+	-o-transition: 1.5s cubic-bezier(0.63, 0.25, 0.25, 1);
+	transition: 1.5s cubic-bezier(0.63, 0.25, 0.25, 1);
+}

@@ -1,9 +1,31 @@
+$color_1: #0080d2;
+$font-family_1: Poppins, sans-serif;
 
 /*--------------------------------------------------------------
 General settings from ProHealth
 ----------------------------------------------------------------*/
 .section-padding {
 	padding: 120px 0;
+}
+.section_title {
+	text-align: center;
+	margin-bottom: 60px;
+	h2 {
+		display: inline;
+		color: $color_1;
+		font-family: $font-family_1;
+		// font-size: 20px;
+		font-weight: 400;
+		border-radius: 20px;
+		background: linear-gradient(358deg, rgba(30, 99, 255, .1) -1077.15%, rgba(24, 124, 255, .1) -690.64%, rgba(18, 143, 255, .1) -213.19%, rgba(12, 169, 255, .1) 218.79%, rgba(6, 194, 255, .1) 764.46%, rgba(0, 219, 255, .1) 1196.44%);
+		padding: 5px 20px;
+	}
+	h3 {
+		// font-size: 80px;
+		line-height: 100px;
+		font-weight: 400;
+		margin-bottom: 0;
+	}
 }
 @media (max-width:991px) {
 	.section-padding {
@@ -14,4 +36,76 @@ General settings from ProHealth
 	.section-padding {
 		padding: 80px 0;
 	}
+}
+@media (max-width:991px) {
+	.section_title {
+		margin-bottom: 40px;
+		h3 {
+			font-size: 60px;
+			line-height: 80px;
+		}
+	}
+}
+@media (max-width:767px) {
+	.section_title {
+		h2 {
+			font-size: 16px;
+		}
+		h3 {
+			margin-top: 10px;
+			font-size: 50px;
+			line-height: 55px;
+		}
+	}
+}
+@media (max-width:575px) {
+	.section_title {
+		h3 {
+			font-size: 40px;
+			line-height: 55px;
+			margin-top: 5px;
+		}
+	}
+}
+
+
+
+
+/*--------------------------------------------------------------
+General settings from micare
+----------------------------------------------------------------*/
+.tf-container {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	padding-right: 15px;
+	padding-left: 15px;
+	max-width: 1320px;
+	width: 100%;
+	.row {
+		margin-left: -15px !important;
+		margin-right: -15px !important;
+		>* {
+			padding-left: 15px !important;
+			padding-right: 15px !important;
+		}
+	}
+}
+.tf-container.w-full {
+	max-width: 100%;
+}
+.tf-container.w-1930 {
+	max-width: 1930px;
+}
+.tf-container.w-1890 {
+	max-width: 1890px;
+}
+.tf-container.w-1810 {
+	max-width: 1810px;
+}
+.tf-container.w-1760 {
+	max-width: 1760px;
+}
+.tf-container.w-1740 {
+	max-width: 1740px;
 }
