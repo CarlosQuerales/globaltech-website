@@ -10,6 +10,21 @@
 @import "../scss/__boxes-footer";
 @import "../scss/__helpers";
 // @import "../scss/__popup";
+
+@import "../scss/landing/hero-section";
+@import "../scss/landing/about-us-section";
+@import "../scss/landing/fun-fact-section";
+
+@import "../scss/landing/how-we-work-section";
+@import "../scss/landing/work-we-done-section";
+@import "../scss/landing/cta-section";
+@import "../scss/landing/team-doctors-section";
+
+@import "../scss/landing/pricing-section";
+
+
+@import "../scss/settings/prohealth-general-settings";
+
 @import "../scss/home-page/section-a";
 @import "../scss/home-page/section-b";
 @import "../scss/home-page/section-c";
@@ -311,63 +326,63 @@ $body_desktop_line-height: 1.47;
 }
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { 
-	body{
+// @media (min-width: 1200px) { 
+// 	body{
 
-		h1, .h1{
-			font-size: $h1_desktop_font-size;
-			line-height: $h1_desktop_line-height;
-			letter-spacing: $h1_desktop_letter-spacing;
+// 		h1, .h1{
+// 			font-size: $h1_desktop_font-size;
+// 			line-height: $h1_desktop_line-height;
+// 			letter-spacing: $h1_desktop_letter-spacing;
 	
-		}
+// 		}
 	
-		h2, .h2{
-			font-size: $h2_desktop_font-size;
-			line-height: $h2_desktop_line-height;
-			letter-spacing: $h2_desktop_letter-spacing;
-		}
+// 		h2, .h2{
+// 			font-size: $h2_desktop_font-size;
+// 			line-height: $h2_desktop_line-height;
+// 			letter-spacing: $h2_desktop_letter-spacing;
+// 		}
 	
-		h3, .h3{
-			font-size: $h3_desktop_font-size;
-			line-height: $h3_desktop_line-height;
-			letter-spacing: $h3_desktop_letter-spacing;
+// 		h3, .h3{
+// 			font-size: $h3_desktop_font-size;
+// 			line-height: $h3_desktop_line-height;
+// 			letter-spacing: $h3_desktop_letter-spacing;
 	
-		}
+// 		}
 	
-		h4, .h4{
-			font-size: $h4_desktop_font-size;
-			line-height: $h4_desktop_line-height;
-			letter-spacing: $h4_desktop_letter-spacing;
-		}
+// 		h4, .h4{
+// 			font-size: $h4_desktop_font-size;
+// 			line-height: $h4_desktop_line-height;
+// 			letter-spacing: $h4_desktop_letter-spacing;
+// 		}
 	
-		h5, .h5{
-			font-size: $h5_desktop_font-size;
-			line-height: $h5_desktop_line-height;
-			letter-spacing: $h5_desktop_letter-spacing;
-		}
+// 		h5, .h5{
+// 			font-size: $h5_desktop_font-size;
+// 			line-height: $h5_desktop_line-height;
+// 			letter-spacing: $h5_desktop_letter-spacing;
+// 		}
 	
-		h6, .h6{
-			font-size: $h6_desktop_font-size;
-			line-height: $h6_desktop_line-height;
-			letter-spacing: $h6_desktop_letter-spacing;
-		}
+// 		h6, .h6{
+// 			font-size: $h6_desktop_font-size;
+// 			line-height: $h6_desktop_line-height;
+// 			letter-spacing: $h6_desktop_letter-spacing;
+// 		}
 	
-		p{
-			font-size: $body_desktop_font-size;
-			line-height: $body_desktop_line-height;
-		}
+// 		p{
+// 			font-size: $body_desktop_font-size;
+// 			line-height: $body_desktop_line-height;
+// 		}
 
-		li{
-			font-size: $body_desktop_font-size;
-			line-height: $body_desktop_line-height;
-		}
+// 		li{
+// 			font-size: $body_desktop_font-size;
+// 			line-height: $body_desktop_line-height;
+// 		}
 
-		h1, h2, h3, h4, h5, h6{
-			// text-transform: uppercase;
-		}
+// 		h1, h2, h3, h4, h5, h6{
+// 			// text-transform: uppercase;
+// 		}
 		
-	}
-}
+// 	}
+// }
 
 body.home{
 
