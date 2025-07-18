@@ -1,0 +1,68 @@
+$color_1: #fff;
+$color_2: #333;
+$color_3: #00c5b5;
+$color_4: #007ca6;
+$color_5: #666;
+$font-family_1: 'Arial', sans-serif;
+
+.pricing-container {
+	background: linear-gradient(135deg, #007ca6, #00c5b5);
+	padding: 60px 20px;
+	color: $color_1;
+	font-family: $font-family_1;
+}
+.pricing-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	max-width: 1200px;
+	margin: 0 auto;
+	justify-content: center;
+}
+.card {
+	background: #ffffff;
+	color: $color_2;
+	padding: 30px 25px;
+	border-radius: 16px;
+	width: 100%;
+	max-width: 340px;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	&:hover {
+		transform: translateY(-10px);
+		box-shadow: 0 20px 35px rgba(0, 0, 0, 0.2);
+	}
+	.icon {
+		margin-bottom: 20px;
+		color: $color_3;
+	}
+	h3 {
+		margin: 0 0 10px;
+		font-size: 22px;
+	}
+	.price {
+		font-size: 24px;
+		font-weight: bold;
+		color: $color_4;
+		margin-bottom: 10px;
+		span {
+			font-size: 14px;
+			color: $color_5;
+			margin-left: 5px;
+		}
+	}
+	p {
+		margin: 0 0 15px;
+	}
+	ul {
+		padding-left: 20px;
+		li {
+			list-style: disc;
+			margin-bottom: 8px;
+		}
+	}
+}
+.card.featured {
+	border: 3px solid #00c5b5;
+	position: relative;
+}

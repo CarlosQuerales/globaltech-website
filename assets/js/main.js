@@ -1,7 +1,121 @@
 var jQ = jQuery.noConflict();
 
+
+class HeaderController {
+  constructor() {
+    this.lastScroll = 0;
+    this.delta = 5;
+    this.ticking = false;
+
+    this.$win = jQ(window);
+    this.$hdrSticky = jQ('.header-sticky');
+    this.$hdrStickyAlt = jQ('.cs_sticky_header');
+    this.$adminBar = jQ('#wpadminbar');
+  }
+
+  getAdminHeight() {
+    return this.$adminBar.length ? this.$adminBar.outerHeight() : 0;
+  }
+
+  headerSticky() {
+    const updateHeader = () => {
+      let st = this.$win.scrollTop();
+      const navH = this.$hdrSticky.outerHeight();
+      st = Math.max(st, 0);
+
+      if (st > navH + 100) {
+        this.$hdrSticky.addClass('header-bg');
+
+        if (st > this.lastScroll + this.delta) {
+          this.$hdrSticky.css({ transform: 'translateY(-110%)', top: this.getAdminHeight() });
+        } else if (st < this.lastScroll - this.delta) {
+          this.$hdrSticky.css({ transform: 'translateY(0)' });
+        }
+      } else {
+        this.$hdrSticky.removeClass('header-bg').css({ transform: 'translateY(-110%)', top: this.getAdminHeight() });
+      }
+
+      this.lastScroll = st;
+      this.ticking = false;
+    };
+
+    this.$win.on('scroll', () => {
+      if (!this.ticking) {
+        requestAnimationFrame(updateHeader);
+        this.ticking = true;
+      }
+    });
+
+    updateHeader();
+  }
+
+  initNav() {
+    // Append toggles
+    jQ('.cs_nav').append('<span class="cs_menu_toggle"><span/></span>');
+    jQ('.menu-item-has-children').append('<span class="cs_munu_dropdown_toggle"><span/></span>');
+
+    // Main nav toggle
+    jQ('body').on('click', '.cs_menu_toggle', function () {
+      const $t = jQ(this);
+      $t.toggleClass('cs_toggle_active')
+        .siblings('.cs_nav_list').toggleClass('cs_active');
+      jQ('.cs_site_header').toggleClass('cs_mobile_toggle_active');
+    });
+
+    // Dropdown toggles
+    jQ('body').on('click', '.cs_munu_dropdown_toggle', function () {
+      const $p = jQ(this).parent();
+      jQ(this).toggleClass('active').siblings('ul').slideToggle();
+      $p.toggleClass('active');
+    });
+
+    // Sidebar & Search toggles
+    jQ('.cs_sidebar_toggle_btn').on('click', () => jQ('.cs_sidenav').addClass('active'));
+    jQ('.cs_search_toggle_btn').on('click', () => jQ('.cs_header_search').addClass('active'));
+    jQ('.cs_close, .cs_sidenav_overlay').on('click', () => jQ('.cs_sidenav, .cs_header_search').removeClass('active'));
+  }
+
+  stickyHeader() {
+    const stOffset = this.$hdrStickyAlt.outerHeight() + 30;
+    let lastScroll = 0;
+
+    this.$win.on('scroll', () => {
+      const top = this.$win.scrollTop();
+
+      if (top >= stOffset) {
+        this.$hdrStickyAlt.addClass('cs_gescout_sticky');
+      } else {
+        this.$hdrStickyAlt.removeClass('cs_gescout_sticky cs_gescout_show');
+      }
+
+      if (this.$hdrStickyAlt.hasClass('cs_gescout_sticky')) {
+        if (top < lastScroll) {
+          this.$hdrStickyAlt.addClass('cs_gescout_show');
+        } else {
+          this.$hdrStickyAlt.removeClass('cs_gescout_show');
+        }
+      }
+
+      lastScroll = top;
+    });
+  }
+
+  init() {
+    this.headerSticky();
+    this.initNav();
+    this.stickyHeader();
+  }
+}
+
+
 jQ(document).ready(function(){
 	
+
+  // Initialize header controller
+  const header = new HeaderController();
+  header.init();
+
+
 	jQ(window).on("load", function () {
 		jQ('body').css('opacity','1');
 	});
